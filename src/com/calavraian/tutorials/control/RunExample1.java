@@ -13,6 +13,24 @@ public class RunExample1 {
 		//Example 1
 		readJSON();
 		
+		writeJSON();
+	}
+
+	private static void writeJSON() {
+		People objectToParse = new People();
+		ObjectMapper mapperObj = new ObjectMapper();
+
+		objectToParse.name = "Comming Soon";
+		objectToParse.email = "comming@example.com";
+		objectToParse.age = 0;
+		
+		try {
+			mapperObj.writeValue(new File("Resources/Example1Output.json"), objectToParse);
+			
+			System.out.println("File saved with new data");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private static void readJSON() {
