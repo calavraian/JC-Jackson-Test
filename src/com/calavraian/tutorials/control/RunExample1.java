@@ -3,8 +3,10 @@ package com.calavraian.tutorials.control;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
 
 import com.calavraian.tutorials.jacksontest.People;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class RunExample1 {
@@ -29,6 +31,15 @@ public class RunExample1 {
 			
 			System.out.println("File saved with new data");
 		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		// or:
+		try {
+			byte[] jsonBytes = mapperObj.writeValueAsBytes(objectToParse);
+			
+			System.out.println("Bytes array: " + Arrays.toString(jsonBytes));
+		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
 	}
