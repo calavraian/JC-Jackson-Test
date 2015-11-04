@@ -42,6 +42,15 @@ public class RunExample1 {
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
+
+		// or:
+		try {
+			String jsonString = mapperObj.writeValueAsString(objectToParse);
+			
+			System.out.println("String: " + jsonString);
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private static void readJSON() {
