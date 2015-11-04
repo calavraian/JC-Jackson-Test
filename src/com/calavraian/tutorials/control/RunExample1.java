@@ -11,6 +11,11 @@ public class RunExample1 {
 	
 	public static void main(String[] args) {
 		//Example 1
+		readJSON();
+		
+	}
+
+	private static void readJSON() {
 		ObjectMapper mapperObj = new ObjectMapper();
 
 		try {
