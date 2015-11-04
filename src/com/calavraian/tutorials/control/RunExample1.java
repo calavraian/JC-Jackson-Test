@@ -33,5 +33,16 @@ public class RunExample1 {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		// or:
+		try {
+			People dataFromText = mapperObj.readValue("{\"name\":\"Elizabeth\", \"email\":\"eliza@example.com\", \"age\":25}", People.class);
+			
+			System.out.println("Name: " + dataFromText.name);
+			System.out.println("Email: " + dataFromText.email);
+			System.out.println("Age: " + dataFromText.age);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
