@@ -3,4 +3,4 @@ Simple code with examples using jackson 2.6.3 libraries, this is not a full proj
 
 [![Build Status](https://travis-ci.org/calavraian/JC-Jackson-Test.svg)](https://travis-ci.org/calavraian/JC-Jackson-Test)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind)
-
+[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/calavraian/JC-Jackson-Test)
